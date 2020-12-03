@@ -17,9 +17,9 @@ class LaravelRoute extends Route
         return $this->kernel()->handle($illuminateRequest);
     }
 
-    protected function terminate($illuminateRequest, $illuminateRequest)
+    protected function terminate($illuminateRequest, $illuminateResponse)
     {
-        $this->kernel()->terminate($illuminateRequest, $illuminateRequest);
+        $this->kernel()->terminate($illuminateRequest, $illuminateResponse);
     }
 
     /**
