@@ -1,0 +1,38 @@
+{
+    "name": "light-bear/tars-laravel",
+    "description": "tars laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "李先森",
+            "email": "657090156@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phptars/tars-server": "dev-master",
+        "phptars/tars-deploy": "^0.1",
+        "phptars/tars2php": "^0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "LightBear\\TarsLaravel\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LightBear\\TarsLaravel\\LaravelServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/light-bear/tars-server"
+        }
+    ]
+}
